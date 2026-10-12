@@ -1,0 +1,254 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #19352a;
+  background: #f5f8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  background:
+    radial-gradient(circle at top left, #dcefe0 0, transparent 38%),
+    linear-gradient(135deg, #f8faf7, #eaf4ec);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  background: white;
+  border: 1px solid #e4ece4;
+  border-radius: 24px;
+  box-shadow: 0 18px 60px #1d553514;
+}
+
+.signup-card {
+  max-width: 500px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 20px;
+  border-radius: 17px;
+  color: white;
+  background: #218653;
+  font-size: 30px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(27px, 4vw, 34px);
+  letter-spacing: -1px;
+}
+
+.muted,
+.auth-footer {
+  color: #718077;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce5dd;
+  border-radius: 10px;
+  background: #fcfdfb;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #218653;
+  box-shadow: 0 0 0 3px #21865318;
+}
+
+.primary-button,
+.logout-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  margin-top: 14px;
+  color: white;
+  background: #218653;
+}
+
+.primary-button:hover {
+  background: #176b40;
+}
+
+.primary-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.auth-footer {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: #218653;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #bd2929;
+  font-size: 13px;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  border-bottom: 1px solid #e5ece5;
+}
+
+.topbar h2 {
+  margin: 0;
+  color: #218653;
+}
+
+.logout-button {
+  color: #218653;
+  background: #e9f5ed;
+}
+
+.welcome-section {
+  padding: 70px 7% 45px;
+  background: linear-gradient(125deg, #e3f4e7, #f6faf4);
+}
+
+.eyebrow {
+  color: #218653;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.welcome-section h1 {
+  margin-top: 15px;
+  font-size: clamp(32px, 5vw, 48px);
+}
+
+.welcome-section > p {
+  max-width: 600px;
+  color: #66786c;
+  line-height: 1.8;
+}
+
+.role-card {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 22px;
+  border: 1px solid #d6e8d9;
+  border-radius: 14px;
+  background: white;
+}
+
+.role-card span {
+  color: #718077;
+  font-size: 12px;
+}
+
+.role-card h3 {
+  margin: 7px 0 0;
+  text-transform: capitalize;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  padding: 40px 7%;
+}
+
+.feature-card {
+  padding: 26px;
+  border: 1px solid #e5ece5;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 30px #1d553508;
+}
+
+.feature-icon {
+  font-size: 32px;
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: #718077;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .auth-card {
+    padding: 26px 22px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-section {
+    padding-top: 45px;
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+.vscode/
+
+backend/node_modules/
+backend/.env
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
