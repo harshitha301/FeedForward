@@ -8,7 +8,7 @@ const authRoutes = require("./routes/auth");
 const foodRoutes = require("./routes/food");
 const requestRoutes = require("./routes/requests");
 const adminRoutes = require("./routes/admin");
-
+const setupRoutes = require("./routes/setup");
 const app = express();
 
 const PORT = process.env.PORT || 5000;
@@ -32,7 +32,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/food", foodRoutes);
 app.use("/api/requests", requestRoutes);
 app.use("/api/admin", adminRoutes);
-
+app.use("/api/setup", setupRoutes);
 // 404 route
 app.use((req, res) => {
   res.status(404).json({
