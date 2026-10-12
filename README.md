@@ -20,10 +20,28 @@ FeedForward provides a centralized platform where donors can share surplus food 
 
 ## ✨ Key Features
 
-### 👤 User Authentication
-- Account registration and login.
-- Separate donor and recipient organization roles.
-- Role-based access to platform features.
+### 👤 User Authentication & Roles
+
+FeedForward supports three role-based user types:
+
+**1. Food Donor**
+- Register and log in to the platform.
+- Publish and manage surplus food donations.
+- Review and approve or reject organization requests.
+
+**2. Recipient Organization**
+- Register and log in to the platform.
+- Complete the required organization verification process.
+- Browse available food donations and request suitable donations.
+- Track pickup and delivery status.
+
+**3. Administrator (Admin)**
+- Access the Admin Dashboard.
+- View platform statistics.
+- Verify and manage recipient organizations.
+- Monitor platform activities and support responsible administration.
+
+Each role has access to features according to its permissions, helping maintain secure and organized platform operations.
 
 ### 🍱 Food Donation Management
 - Donors can publish surplus food donations.
